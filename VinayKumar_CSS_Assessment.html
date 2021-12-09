@@ -1,0 +1,345 @@
+<!-- While building this project I've saved the images used, in a folder named as 'assets' inside the directory containing this html file. -->
+<!--I'll attach the screenshot of the webpage, and whole working directory as a zip file.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assessment</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <style>
+
+            /*Universal*/
+            * {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 20px;
+            }
+            /*------------------------------------------*/
+
+            /*Classes used accross different sections*/
+            .sub_heading {
+                font-weight: bold;
+                font-size: 25px;
+                text-align: center;
+                margin-top: 40px;
+                margin-bottom: 35px;
+            }
+            .banner {
+                
+                background-size: cover;
+                height: 400px;
+                /* Tint color */
+                background-color: rgba(0,0,0,.5);
+                background-blend-mode: multiply; 
+                margin: -10px -10px -10px -10px;
+
+            }
+            .banner_para {
+                text-align: center;
+                font-size: 40px;
+                margin: 0px;
+                padding-top: 150px;
+                color: white;
+            }
+            .custom_button{
+                background-color: rgba(25,154,132,255);
+                width: 150px;
+                height: 45px;
+                font-size: 15px;
+                color: white;
+                border-radius: 13px;
+                vertical-align: middle;
+                border-color: transparent;
+                margin-left: 43%;
+                margin-top: 15px;
+            }
+            /*------------------------------------------*/
+
+            /*Header*/
+            header {
+                background-color: rgba(25,154,132,255);
+                margin: -10px;
+            }
+            header h1{
+                display: inline-block;
+                color: white;
+                margin-left: 2%;
+                font-size: 30px;
+                margin-right: 33%;
+            }
+            #nav{
+                
+                font-size: 20px;
+                background-color: rgba(25,154,132,255);
+            }
+            #nav a {
+                text-decoration: none;
+                padding: 13px;
+                color: white;  
+                 
+            }
+            /*------------------------------------------*/
+
+            /*Intro Section*/
+            #intro_back_image{
+                background-image: url("./assets/you-x-ventures-Oalh2MojUuk-unsplash.png");
+            }
+            /*------------------------------------------*/
+
+            /*Description Section*/
+            #description {
+                margin-top: 20px;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+            #desc_para {
+                font-size: 20px;
+                text-align: center;
+                display: inline-block;
+                max-width: 40%;
+                padding-left: 20px;
+                vertical-align: 110px;
+            }
+            #desc_align{
+                text-align: center;
+            }
+            /*------------------------------------------*/
+
+            /*Way Section*/
+
+            #way{
+                background-color: rgba(25,154,132,255);
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+            #way_para {
+                font-size: 20px;
+                text-align: center;
+                display: inline-block;
+                max-width: 65%;
+                padding-left: 20px;
+                color: white;
+            }
+            /*------------------------------------------*/
+
+            /*Benifits Section*/
+            #benifits{
+                /*wrapper to wrap all the benifits*/
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .benifit{
+                /*class to style all the beninfits inside */
+                display: inline-block;
+                max-width: 26%;
+                text-align: center;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-left: 25px;
+                min-width: 300px;
+                padding-bottom: 50px;
+            }
+            /*------------------------------------------*/
+
+            /*Mentor Section*/
+            #mentor_back_image{
+                background-image: url("./assets/monica-melton-oc_XTqWezp4-unsplash.png");
+            }
+            /*------------------------------------------*/
+
+
+            /*Featured Section*/
+            #featured_resource{
+                margin-top: 125px;
+                margin-bottom: 50px;
+            }
+            .resource{
+                margin-top: 40px;
+                margin-left: 60px;
+                margin-right: -20px;
+                width: 20%;
+                display: inline-block;
+                text-align: center;
+                border-radius: 20px;
+                background-color: rgb(245, 245, 245);
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                border-color: transparent;
+                min-width: 250px;
+            }
+            .resource_img {
+                width: 100%;
+            }
+            .cust_size{
+                margin: 0px;
+                margin-bottom: 20px;
+                width: 100px;
+                height: 30px;
+            }
+            .cust_color{
+                background-color: gray;
+                margin-right: 15px;
+            }
+            .add_padding{
+                padding-left: 9px;
+                padding-right: 9px;
+            }
+            /*------------------------------------------*/
+
+            /*footer*/
+            #custom_footer{
+                background-color: rgba(25,154,132,255);
+                text-align: center;
+                color:white;
+                width: 100%;
+                height: 40px;
+                padding-top: 20px;
+            }
+            /*------------------------------------------*/
+        </style>
+    </head>
+    <body>
+
+        <!--Header contains navigation bar-->
+        <header id = nav>
+            <h1>Teach our Teachers</h1>
+            <a href="">Why us?</a>
+            <a href="">Features</a>
+            <a href="">Resources</a>
+            <a href="">Get in touch</a>
+        </header>
+
+
+        <!--Contains a banner image and text on top of it.-->
+        <section class = "banner" id = "intro_back_image">
+            <p class = "banner_para">World's most popular online marketplace for<br> teacher collaboration and eduprenaurship.</p>
+        </section>
+
+
+        <!--Contains the a little description.-->
+        <section id = "description">
+            <h2 class = "sub_heading">Incredible things can happen when teachers work together.</h2>
+            <div id = "desc_align">
+                <img src="./assets/Image 3.png" alt="" width="400px" height="300px">
+                <p id = "desc_para">Preparing resources for conducting classes is tough. We take care of everything for you and make teaching easy and fascinating. When teachers work in coherence, it paves the way for Edupreneurship.</p>
+            </div>
+        </section>
+
+        
+        <!--Contains a way-->
+        <section id = "way">
+            <img src="./assets/NoPath.png" alt="Image Loading Failed." width = 60%>
+            <br>
+            <p id = "way_para">Preparing for classes is now a problem of the past. Collaborate with amazing teachers all over the world and grow professionally. Your Eduprenaurial journey starts here!</p>
+        </section>
+
+
+        <!--Contains a benifits of working with us.-->
+        <section id = "benifits">
+            <h2 class="sub_heading">Benifits of working with us</h2>
+            <section class = "benifit">
+                <img src="./assets/NoPath - Copy (2).png" alt="">
+                <h3>Become an Edupreneur</h3>
+                <p>
+                    Share your tresure trove of teaching resources and generate an alternate source of income.
+                </p>
+            </section>
+            <section class = "benifit">
+                <img src="./assets/NoPath - Copy (3).png" alt="">
+                <h3>Teacher Resources</h3>
+                <p>
+                    Save a day's effort every week by acquiring resources tailored to your uniqueteaching needs.
+                </p>
+            </section>
+            <section class = "benifit">
+                <img src="./assets/NoPath - Copy (4).png" alt="">
+                <h3>Mentorship Program</h3>
+                <p>Upskill yourself and grow professionally by seeking guidance and support from seasoned teachers.</p>
+            </section>
+        </section>
+
+
+        <!--Contains looking for a mentor.-->
+        <section class = "banner" id="mentor_back_image">
+            <p class="banner_para">Looking for a mentor?</p>
+            <button class="custom_button">Get in touch</button>
+        </section>
+
+
+        <!--Contains featured resources.-->
+        <section id = "featured_resource">
+            <h2 class="sub_heading">Featured Resources</h2>
+            <section class = "resource">
+                <img src="./assets/Image 1.png" alt="" class = "resource_img">
+                <h3 class="add_padding">The ultimate guide to right angle trigonometry.</h3>
+                <p class="add_padding">A short description here which tells us the topics in breif.</p>
+                <h4>INR 300</h4>
+                <button class="custom_button cust_size cust_color">Preview</button>
+                <button class="custom_button cust_size">Buy Now</button>
+            </section>
+            <section class = "resource">
+                <img src="./assets/Image 1.png" alt="" class = "resource_img">
+                <h3 class="add_padding">The ultimate guide to right angle trigonometry.</h3>
+                <p class="add_padding">A short description here which tells us the topics in breif.</p>
+                <h4>INR 300</h4>
+                <button class="custom_button cust_size cust_color">Preview</button>
+                <button class="custom_button cust_size">Buy Now</button>
+            </section>
+            <section class = "resource">
+                <img src="./assets/Image 1.png" alt="" class = "resource_img">
+                <h3 class="add_padding">The ultimate guide to right angle trigonometry.</h3>
+                <p class="add_padding">A short description here which tells us the topics in breif.</p>
+                <h4>INR 300</h4>
+                <button class="custom_button cust_size cust_color">Preview</button>
+                <button class="custom_button cust_size">Buy Now</button>
+            </section>
+            <section class = "resource">
+                <img src="./assets/Image 1.png" alt="" class = "resource_img">
+                <h3 class="add_padding">The ultimate guide to right angle trigonometry.</h3>
+                <p class="add_padding">A short description here which tells us the topics in breif.</p>
+                <h4>INR 300</h4>
+                <button class="custom_button cust_size cust_color">Preview</button>
+                <button class="custom_button cust_size">Buy Now</button>
+            </section>
+            <section class = "resource">
+                <img src="./assets/Image 1.png" alt="" class = "resource_img">
+                <h3 class="add_padding">The ultimate guide to right angle trigonometry.</h3>
+                <p class="add_padding">A short description here which tells us the topics in breif.</p>
+                <h4>INR 300</h4>
+                <button class="custom_button cust_size cust_color">Preview</button>
+                <button class="custom_button cust_size">Buy Now</button>
+            </section>
+            <section class = "resource">
+                <img src="./assets/Image 1.png" alt="" class = "resource_img">
+                <h3 class="add_padding">The ultimate guide to right angle trigonometry.</h3>
+                <p class="add_padding">A short description here which tells us the topics in breif.</p>
+                <h4>INR 300</h4>
+                <button class="custom_button cust_size cust_color">Preview</button>
+                <button class="custom_button cust_size">Buy Now</button>
+            </section>
+            <section class = "resource">
+                <img src="./assets/Image 1.png" alt="" class = "resource_img">
+                <h3 class="add_padding">The ultimate guide to right angle trigonometry.</h3>
+                <p class="add_padding">A short description here which tells us the topics in breif.</p>
+                <h4>INR 300</h4>
+                <button class="custom_button cust_size cust_color">Preview</button>
+                <button class="custom_button cust_size">Buy Now</button>
+            </section>
+            <section class = "resource">
+                <img src="./assets/Image 1.png" alt="" class = "resource_img">
+                <h3 class="add_padding">The ultimate guide to right angle trigonometry.</h3>
+                <p class="add_padding">A short description here which tells us the topics in breif.</p>
+                <h4>INR 300</h4>
+                <button class="custom_button cust_size cust_color">Preview</button>
+                <button class="custom_button cust_size">Buy Now</button>
+            </section>
+        </section>
+
+        <!--Contains Compyright info as a footer info.-->
+        <footer>
+            <h3 id="custom_footer">Copyright 2020. All right reserved.</h3>
+        </footer>
+    </body>
+</html>
